@@ -15,7 +15,10 @@ This problem set is organized as follows:
 
 At the end of the `README`, you will find
 * Submission instructions
-* Steps for setting up the environment  
+* Steps for setting up the environment
+
+## Changelog
+* **Feb 19, 2025:** Added a colorbar to the edge orientation filter output (*Part 3.5*)
 
 ## Part 1: Steerable Bases
 > Steerable bases refer to a set of basis functions that can be linearly combined to produce a function in the same family, oriented (or phased) in any direction.
