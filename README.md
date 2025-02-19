@@ -15,7 +15,10 @@ This problem set is organized as follows:
 
 At the end of the `README`, you will find
 * Submission instructions
-* Steps for setting up the environment  
+* Steps for setting up the environment
+
+## Changelog
+* **Feb 19, 2025:** Added a colorbar to the edge orientation filter output (*Part 3.5*)
 
 ## Part 1: Steerable Bases
 > Steerable bases refer to a set of basis functions that can be linearly combined to produce a function in the same family, oriented (or phased) in any direction.
@@ -150,7 +153,7 @@ Why is this exciting? **Because we can now compute the *exact derivative* of a b
 
 It's worth noting that you also have to smooth an image prior to applying a Sobel filter anyways (because [they amplify high-frequency noise](https://stackoverflow.com/questions/22022991/how-to-eliminate-the-noise-after-sobel-filtering)), so you really gain nothing by avoiding Gaussian filters :)
 
-Note: As you complete the parts in this section, you can check your work using the provided notebook in `notebooks/gauss.ipynb`.
+**Note:** As you complete the parts in this section, you can check your work using the provided notebook in `notebooks/gauss.ipynb`.
 
 ### Part 3.1: Implementing a 1D Gaussian filter
 
@@ -213,7 +216,7 @@ You should expect to see something like this:
 
 ![Hubble](img/hubble.png)
 
-**Hint:** consider this filter:
+**Hint:** consider the complex-valued filter
 
 $$
 G_{\theta}^{(1)} = G_{0°}^{(1)} + iG_{90°}^{(1)}
@@ -223,7 +226,7 @@ $$
 
 ## Submission Instructions
 
-* Make sure to answer all short-answer questions in `outputs/proofs.md`. If you'd prefer to use latex, feel free to write your solutions in `outputs/proofs.pdf`.
+* Make sure to answer all short-answer questions in `outputs/proofs.md`. If you'd prefer to write up solutions in latex, feel free to place your solutions in `outputs/proofs.pdf`.
 * If you answer the extra credit question (Part 2.6), write your answer in a jupyter notebook in `outputs/extra_credit.ipynb`.
 * Zip your `src/` and `outputs/` directories.
 * Upload the zip file to Gradescope.
@@ -237,16 +240,16 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-Next, install PyTorch using the instructions [here](https://pytorch.org/get-started/locally/). Select pip as the installation method. **If you're on Linux and have a CUDA-capable GPU, select the latest CUDA version.** This will give you a command like this:
+Next, install PyTorch using the instructions [here](https://pytorch.org/get-started/locally/). Select pip as the installation method. If you're on Linux and have a CUDA-capable GPU, feek free to select the latest CUDA version (although you can do this entire assignment on CPU). This will give you a command like this:
 
 ```
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 ```
 
 Finally, install this homework's other dependencies:
 
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 You can now open the project directory in VS Code. Within VS Code, open the command palette (<key>⌘ command</key> <key>⇧ shift</key> <key>P</key>), run `Python: Select Interpreter`, and choose the virtual environment you created in the previous steps.
