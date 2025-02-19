@@ -13,12 +13,20 @@ This problem set is organized as follows:
 * `outputs/` contains all other things you need to submit Gradescope
 * `notebooks/` contains notebooks you can use to verify your implementations
 
-At the end of the `README`, you will find
-* Submission instructions
-* Steps for setting up the environment
+At the end of the `README`, you will find the steps for setting up the python environment.
 
 ## Changelog
-* **Feb 19, 2025:** Added a colorbar to the edge orientation filter output (*Part 3.5*)
+* **Feb 19, 2025:** 
+  - Added a colorbar to the edge orientation filter output (*Part 3.5*)
+  - Modified `README.md` file to clarify and move submission instructions up.
+
+## Submission Instructions
+
+* Make sure to answer all short-answer questions in `outputs/proofs.md`. If you'd prefer to write up solutions in latex, feel free to place your solutions in `outputs/proofs.pdf`.
+* If you collaborated with other students in this homework, please list their names in the same proofs file.
+* If you answer the extra credit question (Part 2.6), write your answer in a jupyter notebook in `outputs/extra_credit.ipynb`.
+* Zip your `src/` and `outputs/` directories.
+* Upload the zip file to Gradescope.
 
 ## Part 1: Steerable Bases
 > Steerable bases refer to a set of basis functions that can be linearly combined to produce a function in the same family, oriented (or phased) in any direction.
@@ -223,13 +231,6 @@ G_{\theta}^{(1)} = G_{0°}^{(1)} + iG_{90°}^{(1)}
 $$
 
 **Note:** As this is a more open-ended question, we will grade based on the reasonableness of your approach. However, you are not allowed to ask the TAs for specific design suggestions for your algorithm.
-
-## Submission Instructions
-
-* Make sure to answer all short-answer questions in `outputs/proofs.md`. If you'd prefer to write up solutions in latex, feel free to place your solutions in `outputs/proofs.pdf`.
-* If you answer the extra credit question (Part 2.6), write your answer in a jupyter notebook in `outputs/extra_credit.ipynb`.
-* Zip your `src/` and `outputs/` directories.
-* Upload the zip file to Gradescope.
 
 ## Getting Started
 
