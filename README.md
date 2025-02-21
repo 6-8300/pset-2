@@ -19,6 +19,7 @@ At the end of the `README`, you will find the steps for setting up the python en
 * **Feb 19, 2025:** 
   - Added a colorbar to the edge orientation filter output (*Part 3.5*)
   - Modified `README.md` file to clarify and move submission instructions up.
+* **Feb 20, 2025:** Note that the eigenvectors returned by `torch` are [not unique and hardware-dependent](https://pytorch.org/docs/stable/generated/torch.linalg.eigh.html), so your eigenvectors might not match the notebook (*Part 2.3*).
 
 ## Submission Instructions
 
@@ -124,6 +125,8 @@ Your implementation should look pretty similar to `shift_operator` and should us
 **(a)** Implement `src.fourier.eigendecomposition`, which computes the eigenvalues and eigenvectors of a given self-adjoint linear operator. Importantly, your implementation should return the eigenvalues and eigenvectors in descending order of eigenvalues.
 
 **(b)** Use the provided notebook to inspect the eigenvalues and eigenvectors of a 2D convolution operator. What do you notice? Why do they look different to the eigenfunctions in Lecture 4 (slides 67-68)? Write up 2-3 sentences detailing some insights that this reveals and how they relate to the Fourier transform. Additionally, why did we sort the eigenvalues in descending order (**hint:** think about implementations of the FFT in numpy/torch/etc.)?
+
+**Note:** the eigenvectors returned by `torch` are [not unique and hardware-dependent](https://pytorch.org/docs/stable/generated/torch.linalg.eigh.html), so your eigenvectors might not match the notebook.
 
 ### Part 2.4: The Fourier Transform!
 
