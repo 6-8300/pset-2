@@ -20,6 +20,7 @@ At the end of the `README`, you will find the steps for setting up the python en
   - Added a colorbar to the edge orientation filter output (*Part 3.5*)
   - Modified `README.md` file to clarify and move submission instructions up.
 * **Feb 20, 2025:** Note that the eigenvectors returned by `torch` are [not unique and hardware-dependent](https://pytorch.org/docs/stable/generated/torch.linalg.eigh.html), so your eigenvectors might not match the notebook (*Part 2.3*).
+* **Feb 22, 2025:** Added an extra visualization for `matrix_from_convolution_kernel` and `image_operator_from_sep_kernels` (*Part 2.2*).
 
 ## Submission Instructions
 
