@@ -26,8 +26,7 @@ def conv(
     mode: str = "reflect",  # Padding mode
 ) -> Float[Tensor, "B 1 H W"]:
     """
-    Convolve an image with an oriented first-order Gaussian filter
-    given an angle (in radians) and standard deviation.
+    Convolve an image with a 2D kernel (assume N < H and N < W).
     """
     raise NotImplementedError("Homework!")
 
